@@ -7,5 +7,15 @@ from os import listdir, remove
 # 3. 'trade_order.p'
 def check_for_and_del_io_files():
     # Your code goes here.
+    path = "C:\\Users\\Administrator\\Desktop\\Homework1\\"
+    dirs = listdir(path)
+    for file in dirs:
+        #print(file)
+        if file == "currency_pair.txt":
+            remove(file)
+        if file == "currency_pair_history.csv":
+            remove(file)
+        if file == "trade_order.p":
+            remove(file)
 
     pass # nothing gets returned by this function, so end it with 'pass'.
